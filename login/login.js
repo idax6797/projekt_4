@@ -1,4 +1,4 @@
-
+console.log(Hej);
 var fornavn = document.forms['form']['fornavn'];
 var kode = document.forms['form']['kode'];
 
