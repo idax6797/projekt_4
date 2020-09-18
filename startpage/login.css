@@ -1,0 +1,83 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #CAE0DC;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.container{
+  @media screen and (max-width: 600px)
+   position: relative;
+   margin-top: 100px;
+   width: 450px;
+   height: auto;
+   border-radius: 5px;
+}
+.label{
+  padding: 20px 130px;
+  font-size: 35px;
+  font-weight: bold;
+  color:#52918B;
+}
+
+.login_form{
+  padding: 20px 40px;
+}
+
+.login_form .font{
+  font-size: 18px;
+  color: white;
+  margin: 5px 0px;
+}
+
+.login_form input{
+   height: 40px;
+   width: 350px;
+   padding: 0 5px;
+   font-size:18px;
+   outline: none;
+   border: 1px solid #52918B;
+   color: white;
+   background-color: #52918B;
+}
+
+.login_form .font2{
+  margin-top: 30px;
+}
+
+.login_form button{
+  margin: 45px 0px 30px 0px;
+  height: 44px;
+  width: 135px;
+  font-size: 20px;
+  background-color: #FA9148;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: lighter;
+  border: none;
+  border-radius: 33px;
+
+}
+
+.login_form #fornavn_error,
+.login_form #kode_error{
+  margin-top: 5px;
+  width: 345px;
+  font-size: 18px;
+  color: #FA9148;
+  background: #FF5E49;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #FA9148;
+  display: none;
+
+}

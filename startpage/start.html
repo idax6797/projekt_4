@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="start.css">
     <title>Login</title>
+    <script src="Login/start.js"></script>
 </head>
 
 <body>
 <div class="container">
   <h1>Log in</h1>
 
-  <form action="start.html" method="post">
+  <form class="login_form" action="start.html" method="post" name="form" onsubmit="return validation()">
     <div class="tbox">
       <input type="text" placeholder="Username" value="">
     </div>
+    <div id="email_error">Vælg et brugernavn</div>
 
     <div class="tbox">
       <input type="password" placeholder="Password" value="">
     </div>
+    <div id="pass_error">Vælg et password</div>
 
     <input class="btn" type="submit" name="" value="LOG IN">
 
@@ -27,6 +30,7 @@
 
     <a class="b1"  href="#">FORGOT PASSWORD? </a>
 </div>
+
 
 
 </body>

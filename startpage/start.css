@@ -72,3 +72,19 @@ body{
 a:hover{
   background: yellow;
 }
+
+.login_form #email_error,
+.login_form #pass_error{
+  margin-top: 5px;
+  width: 345px;
+  font-size: 14px;
+  color: black;
+  background: rgba(255, 0, 0, 1 );
+  text-align: center;
+  padding: 5px, 8px;
+  border-radius: 3px;
+  border: 1px solid red;
+  display: none;
+
+
+}
