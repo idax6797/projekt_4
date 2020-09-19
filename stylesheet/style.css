@@ -12,8 +12,9 @@ body{
   font-weight: lighter;
 }
 
+/* LOG IN */
 .container{
-  @media screen and (max-width: 600px)
+    @media screen and (max-width: 600px)
    position: relative;
    margin-top: 100px;
    width: 450px;
