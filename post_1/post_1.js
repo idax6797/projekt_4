@@ -40,12 +40,62 @@ let quiz = {
                 option.required = true;
                 option.classList.add("oquiz");
 
-                // 
+                // Husk at en radio knap gruppe skal dele det samme navn
+                option.name = "quiz" + number;
+                label.appendChild(option);
+
+                // Tilføj option tekst
+                let otext = document.createTextNode(questions[index]['o'][oindex]);
+                label.appendChild(otext);
             }
 
+            // Tilføj til sidst spørgsmålet til main HTML quiz wrapper
+            wrapper.appendChild(qwrap);
         }
+
+        // Tilføj submit knap + event handler til quiz wrapper
+        let submitbutton = document.createElement("input");
+        submitbutton.type = "submit";
+        wrapper.appendChild(submitbutton);
+        wrapper.addEventListener("submit", quiz.submit);
+    },
+
+    submit : function (evt) {
+    // quiz.submit() : Håndterer beregninger, når brugeren svarer/submit'er til en quiz
+
+        // Stop the form fra at submit
+        evt.preventDefault();
+        evt.stopPropagation();
+
+        // Fordi vi gav alle svarmulighederne en class = "oquiz", så kan vi ...
+        let selected = document.querySelectorAll(".oquiz:checked");
+
+        // Få scoren
+        let score = 0;
+        for (let index in questions) {
+            if (selected[index].value == questions[index]['a']) {
+                score++;
+            }
+        }
+        
+        // Vi kan beregne scoren nu
+        let total = selected.length;
+        let percent = score / total;
+
+        // Opdater og vis scoren
+        // I stedet for at lave elementer, kan vi også ændre inner HTML direkte
+        let html = "<h1>";
+        if (percent>=1.0) {
+            html += "KORREKT!"
+        } else {
+            html += "FORKERT!";
+        }
+        html += "</h1>";
+        document.getElementById("quiz-wrap").innerHTML = html;
     }
-}
+};
+
+window.addEventListener("load", quiz.draw);
 
 
 
