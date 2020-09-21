@@ -35,5 +35,5 @@ function kode_Verify(){
     kode.style.border = "1px solid silver";
     kode_error.style.display ="none";
     return true;
-}
+  }
 }
