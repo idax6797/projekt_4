@@ -128,7 +128,12 @@ h2{
 .draggable.dragging {
   opacity: .5;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
+>>>>>>> 0db5113b952b1a90608655a26d246850aec27342
+>>>>>>> 2340c2667bf8a235f21054c5af75f1b4ac7bb37e
 /* QUIZ */
 .quiz_container {
   /* Max-width 100% gør den responsiv, men er den nødvendig? */
@@ -142,6 +147,55 @@ ul {
 button {
 
 }
+<<<<<<< HEAD
+/* Timer */
+
+.base-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  /*stroke: none; - skal det bruges?*/
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 8px;
+  stroke: #52918B;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 8px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.orange {
+  color: #FA9148;
+}
+
+
+.base-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+=======
 
 /*BILLEDEKARRUSEL!!*/
 
