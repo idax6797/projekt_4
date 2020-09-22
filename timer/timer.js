@@ -50,7 +50,7 @@ startTimer();
 // Her tænker jeg der skal laves noget ift. den der zzz side
 function onTimesUp() {
   // Move to a new location or you can do something else
-      window.location.href = "../konfetti/konfetti.html";
+      window.location.href = "../zzz/zzz.html";
 }
 // Her sættes intervalet der minstes hver sek. den tid der er tilbage. Der vises den nye timeLeft. Og tiden opdateres.
 function startTimer() {
