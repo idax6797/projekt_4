@@ -15,6 +15,13 @@
   .karruseltext {
     text-align: center;
   }
+  /*virker fucking ik*/
+
+  .matchkarrusel {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
   
   .karruselimg {
     width: 100%;
