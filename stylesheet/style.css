@@ -163,7 +163,13 @@ ul {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
+
+
+.nextbutton{
+=======
 .nextbutton {
+>>>>>>> 3320f48000d4a22651a257f5e1d55e7df8259a5e
   height: 44px;
   width: 135px;
   font-size: 20px;
