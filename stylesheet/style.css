@@ -13,9 +13,18 @@ body{
 }
 
 h1{
+  margin-top: 130px;
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
+  color:#CAE0DC;
+  text-align: center;
+}
+
+h2{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: lighter;
   color:#CAE0DC;
   text-align: center;
 }
@@ -89,7 +98,6 @@ h1{
   display: none;
 
 }
-<<<<<<< HEAD
 /* POST 4 */
 #drag{
   display: block;
@@ -120,7 +128,6 @@ h1{
 .draggable.dragging {
   opacity: .5;
 }
-=======
 
 /* QUIZ */
 .quiz_container {
@@ -221,9 +228,7 @@ button {
   to {opacity: 1}
 }
 
-<<<<<<< HEAD
 .nextbutton{
-  margin: 45px 0px 30px 0px;
   height: 44px;
   width: 135px;
   font-size: 20px;
@@ -234,8 +239,7 @@ button {
   font-weight: lighter;
   border: none;
   border-radius: 33px;
+  margin:auto;
+  display:block;
+  margin-top: 50px;
 }
-
-=======
->>>>>>> 969ba77f80e2df489999b5c6a8e598b7095a721c
->>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
