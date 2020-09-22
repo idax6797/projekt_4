@@ -102,8 +102,11 @@ p {
   border-radius: 3px;
   border: 1px solid #FA9148;
   display: none;
-
 }
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
 /* POST 4 */
 #drag{
   display: block;
@@ -128,7 +131,6 @@ p {
   padding: 10px;
   background-color: #CAE0DC;
   cursor: move;
-  height: 25px;
   margin-bottom: 10px;
 }
 
@@ -144,6 +146,7 @@ p {
 .draggable.dragging {
   opacity: .5;
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -153,6 +156,8 @@ p {
 >>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
 >>>>>>> 0db5113b952b1a90608655a26d246850aec27342
 >>>>>>> 2340c2667bf8a235f21054c5af75f1b4ac7bb37e
+=======
+>>>>>>> Stashed changes
 
 /* QUIZ */
 .quiz_container {
@@ -177,6 +182,7 @@ li {
   font-size: 20px;
   background-color: #FA9148;
   color: white;
+<<<<<<< Updated upstream
   outline: none;
   cursor: pointer;
   font-weight: lighter;
@@ -186,3 +192,51 @@ li {
   display:block;
   margin-top: 50px;
 }
+=======
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.previous {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*dots*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #52918B;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #FF5E49;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+>>>>>>> Stashed changes
