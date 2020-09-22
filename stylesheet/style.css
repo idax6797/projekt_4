@@ -73,7 +73,6 @@ h1{
   font-weight: lighter;
   border: none;
   border-radius: 33px;
-
 }
 
 .login_form #fornavn_error,
@@ -90,6 +89,7 @@ h1{
   display: none;
 
 }
+<<<<<<< HEAD
 /* POST 4 */
 #drag{
   display: block;
@@ -120,3 +120,105 @@ h1{
 .draggable.dragging {
   opacity: .5;
 }
+=======
+
+/* QUIZ */
+.quiz_container {
+  /* Max-width 100% gør den responsiv, men er den nødvendig? */
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+
+}
+
+/*BILLEDEKARRUSEL!!*/
+
+#karrusel {
+  display: block;
+  @media screen and (max-width: 600px)
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.karruseltext {
+  text-align: center;
+}
+
+.karruselimg {
+  width: 100%;
+}
+
+.billedekarrusel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+
+/*previous og next knapper*/
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color: white;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.previous {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*dots*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #52918B;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #FF5E49;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+>>>>>>> 969ba77f80e2df489999b5c6a8e598b7095a721c
