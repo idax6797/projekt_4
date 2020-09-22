@@ -13,9 +13,18 @@ body{
 }
 
 h1{
+  margin-top: 130px;
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
+  color:#CAE0DC;
+  text-align: center;
+}
+
+h2{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: lighter;
   color:#CAE0DC;
   text-align: center;
 }
@@ -119,8 +128,15 @@ h1{
 .draggable.dragging {
   opacity: .5;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ddf59633b0226d0c7ff45b58d1dcf1611b1df08f
+
+=======
 >>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
 >>>>>>> 0db5113b952b1a90608655a26d246850aec27342
+>>>>>>> 2340c2667bf8a235f21054c5af75f1b4ac7bb37e
 /* QUIZ */
 .quiz_container {
   /* Max-width 100% gør den responsiv, men er den nødvendig? */
@@ -168,7 +184,7 @@ button {
 }
 
 /*previous og next knapper*/
-.previous, .next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -184,12 +200,15 @@ button {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.previous {
+.prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /*dots*/
+.dotbox {
+  text-align: center;
+}
 .dot {
   height: 15px;
   width: 15px;
@@ -200,7 +219,7 @@ button {
   transition: background-color 0.6s ease;
 }
 .active {
-  background-color: #FF5E49;
+  background-color: #FA9148;
 }
 
 /* Fading animation */
@@ -221,9 +240,7 @@ button {
   to {opacity: 1}
 }
 
-<<<<<<< HEAD
 .nextbutton{
-  margin: 45px 0px 30px 0px;
   height: 44px;
   width: 135px;
   font-size: 20px;
@@ -234,4 +251,12 @@ button {
   font-weight: lighter;
   border: none;
   border-radius: 33px;
+  margin:auto;
+  display:block;
+  margin-top: 50px;
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> ddf59633b0226d0c7ff45b58d1dcf1611b1df08f
