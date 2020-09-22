@@ -29,6 +29,12 @@ h2{
   text-align: center;
 }
 
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
 /* LOG IN */
 .container{
     @media screen and (max-width: 600px)
@@ -112,7 +118,7 @@ h2{
   @media screen and (max-width: 600px)
   position: relative;
   background-color: #52918B;
-  margin-top: 25px;
+  margin: 25px;
   width: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -123,6 +129,16 @@ h2{
   background-color: #CAE0DC;
   cursor: move;
   height: 25px;
+  margin-bottom: 10px;
+}
+
+.draggable_container {
+  @media screen and (max-width: 600px)
+  position: relative;
+  margin: 25px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .draggable.dragging {
@@ -148,9 +164,13 @@ ul {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
 
 
 .nextbutton{
+=======
+.nextbutton {
+>>>>>>> 3320f48000d4a22651a257f5e1d55e7df8259a5e
   height: 44px;
   width: 135px;
   font-size: 20px;

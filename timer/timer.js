@@ -2,7 +2,6 @@ console.log("Hello world!");
 
 
 const FULL_DASH_ARRAY = 283;
-
 const COLOR_CODES = {
   info: {
     color: "orange"
