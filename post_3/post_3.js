@@ -1,4 +1,4 @@
-console.log(Hello World);
+console.log("Hello World");
 
 var slideIndex = [1, 1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3"]
@@ -19,4 +19,6 @@ function showSlides(n, no) {
     }
     x[slideIndex[no] - 1].style.display = "block";
 }
+
+
 
