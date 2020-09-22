@@ -102,8 +102,8 @@ p {
   border-radius: 3px;
   border: 1px solid #FA9148;
   display: none;
-
 }
+
 /* POST 4 */
 #drag{
   display: block;
@@ -128,7 +128,6 @@ p {
   padding: 10px;
   background-color: #CAE0DC;
   cursor: move;
-  height: 25px;
   margin-bottom: 10px;
 }
 
