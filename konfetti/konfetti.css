@@ -3,6 +3,7 @@ body {
     width: 100vw;
       height: 100vh;
     position: relative;
+    background-color: #DEF0ED;
   }
   
   canvas {
@@ -25,3 +26,13 @@ body {
     color: #ccc;
     text-align: center;
   }
+
+
+
+
+.podie img {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
