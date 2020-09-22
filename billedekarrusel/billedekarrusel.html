@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
+    <link rel="stylesheet" href="billedekarrusel.css">
     <script src="billedekarrusel.js" defer></script>
     <title>Billedekarrusel</title>
 </head>
@@ -12,21 +13,22 @@
 <body id="karrusel">
 
     <!--Billedekarrusellen-->
-    <div class="billedekarrusel">
+    <div class="matchkarrusel">
         <div class="mySlides fade">
-            <img src="images/Assistens-begravelse.JPG" style="width: 100%;">
+            <img class="karruselimg" src="images/Assistens-begravelse.jpeg" style="width: 100%;">
         </div>
         <div class="mySlides fade">
-            <img class="karruselimg" src="images/Assistens-begravelse2.JPG">
+            <img class="karruselimg" src="images/Assistens-begravelse2.jpeg" style="width:100%">
         </div>
-        <a class="previous" onlick="plusSlides(-1)">&#10094;</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <div style="text-align: center;">
+    <div class="dotbox">
         <span class="dot" onclick="currentSlide(1)"></span>
-        <!--<span class="dot" onclick="currentSlide(2)"></span> -->
+        <span class="dot" onclick="currentSlide(2)"></span>
     </div>
+    <br>
 
 
     <!--Tekst-->
@@ -36,7 +38,6 @@
 
     <!--Videre-knap-->
     <button class="nextbutton" type="next">Videre</button>
-
 </body>
 
 </html>

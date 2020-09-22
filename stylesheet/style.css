@@ -13,11 +13,26 @@ body{
 }
 
 h1{
+  margin-top: 130px;
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
   color:#CAE0DC;
   text-align: center;
+}
+
+h2{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+  color:#CAE0DC;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
 }
 
 /* LOG IN */
@@ -87,9 +102,8 @@ h1{
   border-radius: 3px;
   border: 1px solid #FA9148;
   display: none;
-
 }
-<<<<<<< HEAD
+
 /* POST 4 */
 #drag{
   display: block;
@@ -104,7 +118,7 @@ h1{
   @media screen and (max-width: 600px)
   position: relative;
   background-color: #52918B;
-  margin-top: 25px;
+  margin: 25px;
   width: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -114,13 +128,33 @@ h1{
   padding: 10px;
   background-color: #CAE0DC;
   cursor: move;
-  height: 25px;
+  margin-bottom: 10px;
+}
+
+.draggable_container {
+  @media screen and (max-width: 600px)
+  position: relative;
+  margin: 25px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .draggable.dragging {
   opacity: .5;
 }
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 =======
+<<<<<<< HEAD
+>>>>>>> ddf59633b0226d0c7ff45b58d1dcf1611b1df08f
+
+=======
+>>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
+>>>>>>> 0db5113b952b1a90608655a26d246850aec27342
+>>>>>>> 2340c2667bf8a235f21054c5af75f1b4ac7bb37e
+=======
+>>>>>>> Stashed changes
 
 /* QUIZ */
 .quiz_container {
@@ -132,49 +166,30 @@ ul {
   list-style-type: none;
 }
 
-button {
-
+li {
+  padding: 10px;
+  background-color: #CAE0DC;
 }
 
-/*BILLEDEKARRUSEL!!*/
 
-#karrusel {
-  display: block;
-  @media screen and (max-width: 600px)
-  position: relative;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
-  height: auto;
-  border-radius: 5px;
-}
 
-.karruseltext {
-  text-align: center;
-}
-
-.karruselimg {
-  width: 100%;
-}
-
-.billedekarrusel {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.mySlides {
-  display: none;
-}
-
-/*previous og next knapper*/
-.previous, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
+.nextbutton {
+  height: 44px;
+  width: 135px;
+  font-size: 20px;
+  background-color: #FA9148;
   color: white;
+<<<<<<< Updated upstream
+  outline: none;
+  cursor: pointer;
+  font-weight: lighter;
+  border: none;
+  border-radius: 33px;
+  margin:auto;
+  display:block;
+  margin-top: 50px;
+}
+=======
   font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -221,21 +236,4 @@ button {
   to {opacity: 1}
 }
 
-<<<<<<< HEAD
-.nextbutton{
-  margin: 45px 0px 30px 0px;
-  height: 44px;
-  width: 135px;
-  font-size: 20px;
-  background-color: #FA9148;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  font-weight: lighter;
-  border: none;
-  border-radius: 33px;
-}
-
-=======
->>>>>>> 969ba77f80e2df489999b5c6a8e598b7095a721c
->>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
+>>>>>>> Stashed changes
