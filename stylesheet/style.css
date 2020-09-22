@@ -85,7 +85,7 @@ body{
 /* QUIZ */
 .quiz_container {
   /* Max-width 100% gør den responsiv, men er den nødvendig? */
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 ul {
