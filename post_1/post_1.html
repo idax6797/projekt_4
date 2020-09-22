@@ -4,13 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <title>Login</title>
-    <script src="post_1.js"></script>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <script src="post_1.js" defer></script>
+    <title>Quiz</title>
 </head>
 
 <body>
-<form id="quiz_wrap"></form>
+<div class="quiz_container">
+    <h2 id="question">Question text</h2>
+    <ul>
+        <li>
+            <input type="radio" id="a" name="answer">
+            <label id="a_text" for="a">Question</label>
+        </li>
+        <li>
+            <input type="radio" id="b" name="answer">
+            <label id="b_text" for="b">Question</label>
+        </li>
+        <li>
+            <input type="radio" id="c" name="answer">
+            <label id="c_text" for="c">Question</label>
+        </li>
+    </ul>
+    <button id="submit">Svar</button>
+</div>
 
 </body>
 

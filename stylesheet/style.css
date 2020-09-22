@@ -65,7 +65,6 @@ body{
   font-weight: lighter;
   border: none;
   border-radius: 33px;
-
 }
 
 .login_form #fornavn_error,
@@ -80,5 +79,19 @@ body{
   border-radius: 3px;
   border: 1px solid #FA9148;
   display: none;
+
+}
+
+/* QUIZ */
+.quiz_container {
+  /* Max-width 100% gør den responsiv, men er den nødvendig? */
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
 
 }
