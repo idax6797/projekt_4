@@ -17,61 +17,61 @@
 
   <!--Karrusellen-->
   <h2>Hvor?</h2>
-  <div id="slideshow1" class="slideshow-container">
+  <div class="slideshow-container">
     <div class="mySlides1 fade">
-      <img class="karruselimg" src="images/odensevagtværn.png" style="width:100%">
+      <img class="karruselimg" src="images/odensevagtværn.png" alt="odensevagtværn" style="width:100%">
     </div>
 
     <div class="mySlides1 fade">
-      <img class="karruselimg" src="images/ørstedsgade.png" style="width:100%">
+      <img class="karruselimg" src="images/ørstedsgade.png" alt="ørstedsgade" style="width:100%">
     </div>
 
     <div class="mySlides1 fade">
-      <img class="karruselimg" src="images/eksportslagteriet.png" style="width:100%">
+      <img class="karruselimg" src="images/eksportslagteriet.png" alt="eksportslagteriet" style="width:100%">
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
   </div>
 
   <h2>Hvordan?</h2>
-  <div id="slideshow2" class="slideshow-container">
+  <div class="slideshow-container">
     <div class="mySlides2 fade">
-      <img class="karruselimg" src="images/bombe.png" style="width:100%">
+      <img class="karruselimg" src="images/bombe.png" alt="bombe" style="width:100%">
     </div>
 
     <div class="mySlides2 fade">
-      <img class="karruselimg" src="images/brand.png" style="width:100%">
+      <img class="karruselimg" src="images/brand.png" alt="brand" style="width:100%">
     </div>
 
     <div class="mySlides2 fade">
-      <img class="karruselimg" src="images/graffiti.png" style="width:100%">
+      <img class="karruselimg" src="images/graffiti.png" alt="graffiti" style="width:100%">
     </div>
 
-    <a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
   </div>
 
   <h2>Hvad?</h2>
-  <div id="slideshow3" class="slideshow-container">
-    <div class="slideshow">
-      <img class="karruselimg" src="images/brand.png" style="width:100%">
+  <div class="slideshow-container">
+    <div class="mySlides3 fade">
+      <img class="karruselimg" src="images/kødkonserves.png" alt="kødkonserves" style="width:100%">
     </div>
 
-    <div class="slideshow">
-      <img class="karruselimg" src="images/eksportslagteriet.png" style="width:100%">
+    <div class="mySlides3 fade">
+      <img class="karruselimg" src="images/bil.png" alt="bil" style="width:100%">
     </div>
 
-    <div class="slideshow">
-      <img class="karruselimg" src="images/graffiti.png" style="width:100%">
+    <div class="mySlides3 fade">
+      <img class="karruselimg" src="images/mælk.png" alt="mælk" style="width:100%">
     </div>
 
-    <a class="prev" onclick="plusSlides(-1, slideshow3)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
   </div>
 
   <!--Match-knap-->
-  <button class="nextbutton" type="next">Match!</button>
+  <button onclick="showAlert()" class="nextbutton" type="button">Match!</button>
 </body>
 
 </html>

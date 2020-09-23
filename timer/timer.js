@@ -9,7 +9,7 @@ const COLOR_CODES = {
   }
 };
 // Start tiden er 10sek og den gået tid er 0 og dette vil trækkes fra Time_limet
-const TIME_LIMIT = 10;
+const TIME_LIMIT = 30;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -20,11 +20,12 @@ document.getElementById("timer").innerHTML = `
 <div class="base-timer">
 
 <! ––Her er der lavet et SVG element ––>
+<div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g class="base-timer__circle">
       <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
         <! ––Her er der lavet en path som skal være med til at lave den ring, som ligger oven på den grønne ring ––>
-      <path
+        <path
         id="base-timer-path-remaining"
         stroke-dasharray="283"
         class="base-timer__path-remaining ${remainingPathColor}"
@@ -38,16 +39,18 @@ document.getElementById("timer").innerHTML = `
     </g>
   </svg>
    <! ––I denne span er der den resterende tid og her bruges formatTimeLeft ––>
-  <span id="base-timer-label" class="base-timer__label">
-    ${formatTime(timeLeft)}
-  </span>
-</div>
-`;
+   <span id="base-timer-label" class="base-timer__label">${formatTime(
+     timeLeft
+   )}</span>
+ </div>
+ `;
+
 
 startTimer();
-// her tænker jeg der skal laves noget ift. den der zzz side
+// Her tænker jeg der skal laves noget ift. den der zzz side
 function onTimesUp() {
-  clearInterval(timerInterval);
+  // Move to a new location or you can do something else
+      window.location.href = "../zzz/zzz.html";
 }
 // Her sættes intervalet der minstes hver sek. den tid der er tilbage. Der vises den nye timeLeft. Og tiden opdateres.
 function startTimer() {
@@ -56,7 +59,9 @@ function startTimer() {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
     // Her opdateres tiden, så man kan se hvor meget der er tilbage ( lable opdateres)
-    document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
     setCircleDasharray();
 
     if (timeLeft === 0) {
@@ -72,11 +77,12 @@ function formatTime(time) {
   let seconds = time % 60;
       // Hvis seconds er mindre end 10 så skal der tælles ned til 0
   if (seconds < 10) {
-    seconds = `0${seconds}`;
-  }
-      // outputtet er så i formatet MM:SS
+      seconds = `0${seconds}`;
+    }
+
+    // outputtet er så i formatet MM:SS
   return `${minutes}:${seconds}`;
-}
+  }
 
 
 // Finder ud af hvor hvilken brøkdel der er tilbage ( dividerer tiden der er tilbage med timeLimit)
@@ -90,5 +96,7 @@ function setCircleDasharray() {
   const circleDasharray = `${(
     calculateTimeFraction() * FULL_DASH_ARRAY
   ).toFixed(0)} 283`;
-  document.getElementById("base-timer-path-remaining").setAttribute("stroke-dasharray", circleDasharray);
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
 }

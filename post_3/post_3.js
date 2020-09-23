@@ -1,68 +1,30 @@
 console.log("Hello World");
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = [1, 1, 1];
+/* Class the members of each slideshow group with different CSS classes */
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+//hva' er det her rigtigt eller hvad?!
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, no) {
     var i;
-    var slides = document.getElementsByClassName("mySlides1", "mySlides2");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    var slides = document.getElementsByClassName(slideId[no]);
+    if (n > slides.length) { slideIndex[no] = 1 }
+    if (n < 1) { slideIndex[no] = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex[no] - 1].style.display = "block";
 }
 
-//halllooooo hvad sker der lige altså... fatter hat
-
-var slideshow1 = document.getElementById("slideshow1");
-slideshow1.currentSlideIndex = 1;
-showSlides(slideshow1.currentSlideIndex, slideshow1);
-
-var slideshow2 = document.getElementById("slideshow2");
-slideshow2.currentSlideIndex = 1;
-showSlides(slideshow2.currentSlideIndex, slideshow2);
-
-
-function plusSlides(n, slideshow) {
-    showSlides(slideshow.currentSlideIndex += n, slideshow);
+function showAlert() {
+    alert("Congratz! Du har svaret korrekt! - Eller har du..?");
 }
-
-function currentSlide(n, slideshow) {
-    showSlides(slideshow.currentSlideIndex = n, slideshow);
-}
-
-function showSlides(n, slideshow) {
-
-
-
-    var i;
-    var slides = slideshow.getElementsByClassName("mySlides1");
-    //men men men... har kun mySlides1, mySlides2 og mySlides3 som classes...
-    if (n > slides.length) { slideshow.currentSlideIndex = 1 }
-    if (n < 1) { slideshow.currentSlideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideshow.currentSlideIndex - 1].style.display = "block";
-
-}
-
-
-
-
 
 
