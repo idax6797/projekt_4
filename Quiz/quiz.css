@@ -44,7 +44,3 @@ button {
     color: #08544A;
     background-color:#CAE0DC;
 }
-
-button:focus {
-    color: #08544A;
-}
