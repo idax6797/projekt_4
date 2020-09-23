@@ -16,7 +16,7 @@ body{
 
 h1{
   font-size: 7vh;
-
+  padding-top: 10%;
 }
 
 h2{
@@ -31,7 +31,7 @@ h2{
 p{
   font-size: 2vh;
   text-align: center;
-  padding-bottom: 30%;
+  padding-bottom: 15%;
 }
 a{
   font-size: 1.7vh;
