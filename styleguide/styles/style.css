@@ -138,17 +138,43 @@ div.main-color {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  height: 200px;
+  height: 250px;
 }
 
 .container {
   padding: 2px 16px;
 }
 
-.color{
+.color_gn1{
   height: 25%;
-  background-color: #bc0031;
+  background-color: #DEF0ED;
 }
+
+.color_gn2 {
+  height: 25%;
+  background-color: #52918B;
+}
+
+.color_gn3 {
+  height: 25%;
+  background-color: #08544A;
+}
+
+.color_accessibility {
+  height: 25%;
+  background-color: #FA9148;
+}
+
+.color_error {
+  height: 25%;
+  background-color: #1F1F1E;
+}
+
+.color_warning {
+  height: 25%;
+  background-color: #FF5E49;
+}
+
 /* responsiv */
 @media screen and (max-width: 750px) {
   .vertical-menu {

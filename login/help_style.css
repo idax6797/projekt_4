@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    background-color: #CAE0DC;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 425px;
+    height: auto;
+    background:#CAE0DC;
+    padding: 35px 50px;
+}
+
+.form .title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight:700;
+    font-size: 50px;
+    color: #52918B;
+}
+
+.form .subtitle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #52918B;
+    padding-bottom: 50px;
+}
+
+.form .input_wrap{
+    margin-bottom: 20px;
+    width: 350px;
+    position: relative;
+}
+
+.form .input_wrap label{
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.form .input_wrap input{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.form .input_wrap .input{
+    background:#52918B;
+
+}
+
+.form .input_wrap .input:focus{
+    border-color: #FA9148;
+}
+
+.form .input_wrap .btn{
+    letter-spacing: 3px;
+    position: relative;
+    bottom: -80px;
+    text-align: center;
+    color: #fff;
+    height: 44px;
+    width: 135px;
+    border-radius: 33px;
+    padding: 10px 32px;
+    display: block;
+    margin: auto;
+}
+
+.form .input_wrap .btn.disabled{
+    background: #727272;
+}
+
+.form .input_wrap .btn.enabled{
+	background: #FA9148;
+	cursor: pointer;
+}
+
+.form .input_wrap .error_msg{
+	font-size: 15px;
+	margin-bottom: 5px;	
+	color: #f74040;
+	display: none;
+}
