@@ -143,18 +143,6 @@ p {
 .draggable.dragging {
   opacity: .5;
 }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> ddf59633b0226d0c7ff45b58d1dcf1611b1df08f
-
-=======
->>>>>>> 85062c576b1db7629beb14faa1f80564abcc0314
->>>>>>> 0db5113b952b1a90608655a26d246850aec27342
->>>>>>> 2340c2667bf8a235f21054c5af75f1b4ac7bb37e
-=======
->>>>>>> Stashed changes
 
 /* QUIZ */
 .quiz_container {
@@ -171,15 +159,12 @@ li {
   background-color: #CAE0DC;
 }
 
-
-
 .nextbutton {
   height: 44px;
   width: 135px;
   font-size: 20px;
   background-color: #FA9148;
   color: white;
-<<<<<<< Updated upstream
   outline: none;
   cursor: pointer;
   font-weight: lighter;
@@ -188,8 +173,6 @@ li {
   margin:auto;
   display:block;
   margin-top: 50px;
-}
-=======
   font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -235,5 +218,3 @@ li {
   from {opacity: .4}
   to {opacity: 1}
 }
-
->>>>>>> Stashed changes
