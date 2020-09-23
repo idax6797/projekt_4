@@ -1,3 +1,5 @@
+console.log("Virker det? Ja, det gør det!");
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

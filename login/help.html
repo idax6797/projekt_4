@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="help_style.css">
+    <script defer src="helpme.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="title">
+                Velkommen
+            </div>
+            <div class="subtitle">
+                <h1>Log in</h1>
+            </div>
+            <form method="post" action="succes.html" onsubmit="return validation()">
+                <div class="input_wrap">
+                    <label for="input_text">Navn</label>
+                    <div class="input_field">
+                        <input type="text" class="input" id="input_text">
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <label for="input_password">Kode</label>
+                    <div class="input_field">
+                        <input type="password" class="input" id="input_text">
+                    </div>
+                </div>
+                <div class="input_wrap ">
+                    <span class="error.msg"></span>
+                    <input type="submit" id="login_btn" class="btn disabled" value="Login" disabled="true">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="helpme.js"></script>
+
+</body>
+</html>

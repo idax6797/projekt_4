@@ -1,5 +1,5 @@
 console.log("Hello world!");
-
+// credts: Mateusz Rybczonek -  https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/
 
 const FULL_DASH_ARRAY = 283;
 // Den orange ring tilføres
@@ -9,7 +9,7 @@ const COLOR_CODES = {
   }
 };
 // Start tiden er 10sek og den gået tid er 0 og dette vil trækkes fra Time_limet
-const TIME_LIMIT = 10;
+const TIME_LIMIT = 30;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
