@@ -1,5 +1,5 @@
 console.log("Hello world!");
-
+// credts: Mateusz Rybczonek -  https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/
 
 const FULL_DASH_ARRAY = 283;
 // Den orange ring tilføres

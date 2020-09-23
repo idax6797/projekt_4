@@ -58,6 +58,7 @@ div.main {
 .wrapper .left-side{
   padding: 20px 16px;
   box-shadow: 2px 2px 29px -12px rgba(0,0,0,0.75);
+  width: 50%;
 }
 .wrapper .right-side{
   margin-left: 20px;
@@ -66,7 +67,7 @@ div.main {
   box-shadow: 2px 2px 29px -12px rgba(0,0,0,0.75);
 }
 
-/* Kanpper */
+/* Knapper */
 button{
   background-color: #ff9900;
   border: none;
