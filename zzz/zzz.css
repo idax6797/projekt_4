@@ -7,10 +7,12 @@ body{
   text-align: center;
 }
 
+
 h1{
   font-size: 70px;
   margin: 80px
 }
+
 h2{
   font-size: 150px;
   color: #FF5E49;
@@ -27,4 +29,31 @@ p{
 a{
   color: #FFFFFF;
   text-decoration: none;
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-iteration-count: 30;
+}
+
+
+@keyframes hide {
+  0% {
+       display: none;
+       opacity: 0;
+   }
+
+   50% {
+       display: block;
+       opacity: 0;
+   }
+
+   100% {
+       display: block;
+       opacity: 1;
+   }
+}
+
+@media screen and (max-width: 992px) {
+  body{
+    top: 2000%;
+  }
 }
