@@ -1,6 +1,7 @@
 
 *{
   box-sizing: border-box;
+
 }
 body {
   margin: 0;
@@ -68,6 +69,7 @@ div.main {
 }
 
 /* Knapper */
+
 button{
   background-color: #ff9900;
   border: none;
@@ -78,7 +80,9 @@ button{
   display: inline-block;
   font-size: 16px;
 }
-
+.svar{
+  background-color:#CAE0DC;
+}
 .quiz_container {
   margin: 0px 20px 0px 20px;
   display: flex;
@@ -92,28 +96,39 @@ button{
   margin-top: 30px;
 }
 
+
 /* Log in */
-input{
-  margin-left: 10px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+.input_wrap{
+    margin-bottom: 20px;
+    width: 350px;
+    position: relative;
 }
 
-button {
-  border: none;
-  padding: 15px;
-  margin-bottom: 14px;
-  margin-top: 14px;
-  font-size: 16px;
-  font-weight: lighter;
-  color: #08544A;
-  background-color:#CAE0DC;
+.input_wrap label{
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 18px;
 }
 
+.input_wrap input{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.input_wrap .input{
+    background:#52918B;
+
+}
+
+.input_wrap .input:focus{
+    border-color: #FA9148;
+
+}
 
 /* Ikoner */
 .icons {
