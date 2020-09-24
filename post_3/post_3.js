@@ -27,4 +27,6 @@ function showAlert() {
     alert("Congratz! Du har svaret korrekt! - Eller har du..?");
 }
 
+//creds til w3schools <3
+
 
