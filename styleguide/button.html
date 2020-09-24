@@ -32,9 +32,31 @@
 
         <button class="nextbutton" type="button">Videre</button>
         <div class="wrapper">
-          <div  class="left-side">Denne knap bruges på siderne hvor der vises billeder. hvis du trykker på knappen, bliver du ført videre til en "Alert" side, der spørger dig om du er klar til at quizze.</div>
+          <div  class="left-side">Denne knap bruges på siderne hvor der vises billeder. hvis du trykker på knappen, bliver du ført videre til en "Alert" side, der spørger dig om du er klar til at quizze. Derudover er det den samme stil som log ind knappen og "er du klar" siden. dette er det generelle udgangspunkt vi har taget i næsten alt der hedder knapper.</div>
           <div class="right-side"> &lt;button class="nextbutton" type="button"&gt;Videre&lt;/button&gt; </div>
           </div>
+
+          <div class="quiz_container">
+            <div class="svar_container">
+                <button onclick="korrekt_svar()">Engelske/amerikanske</button>
+            </div>
+        </div>
+          <div class="wrapper">
+            <div  class="left-side">Dette er svarmulighedernes stil, til de forskellige quiz elementer der er i vores produkt.</div>
+            <div class="right-side">
+
+              &lt;div class="quiz_container">
+              &lt;h1>Quiz&lt;/h1>
+              &lt;h2>Hvilken nationalitet havde de faldne soldater?&lt;/h2>
+              &lt;div class="svar_container">
+              &lt;button onclick="forkert_svar()">Danske&lt;/button>
+              &lt;button onclick="forkert_svar()">Tyske&lt;/button>
+              &lt;button onclick="korrekt_svar()">Engelske/amerikanske&lt;/button>
+              &lt;/div>
+              &lt;/div>
+
+            </div>
+            </div>
 
       </div>
     </main>
