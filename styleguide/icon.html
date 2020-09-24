@@ -5,7 +5,8 @@
     <title>Style Guide</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/29a6bb7060.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  </head>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+</head>
   <body>
     <header>
 
@@ -30,28 +31,50 @@
             <th>Større ikon</th>
           </tr>
           <tr>
-            <td>.icon--bcc--buspass</td>
-            <td><i class="fas fa-bus"></i></td>
-            <td><i class="fas fa-bus fa-3x"></i></td>
+            <td>Pile til videretryk af billeder</td>
+            <td><i class="fas">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </i></td>
+            <td><i class="fas fa-3x">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </i></td>
           </tr>
           <tr>
-            <td>.icon--bcc--buspass</td>
-            <td><i class="fas fa-bus"></i></td>
-            <td><i class="fas fa-bus fa-3x"></i></td>
+            <td>Prikker der viser mængde af billeder på en side</td>
+            <td><i class="fas">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </i></td>
+            <td><i class="fas fa-3x">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </i></td>
           </tr>
           <tr>
-            <td>.icon--bcc--buspass</td>
-            <td><i class="fas fa-bus"></i></td>
-            <td><i class="fas fa-bus fa-3x"></i></td>
+            <td>Forkert svar!</td>
+            <td><i class="fas">
+                <i class="fas fa-times"></i>
+            </i></td>
+            <td><i class="fas fa-3x">
+                <i class="fas fa-times"></i>
+            </i></td>
           </tr>
           <tr>
-            <td>.icon--bcc--buspass</td>
-            <td><i class="fas fa-bus"></i></td>
-            <td><i class="fas fa-bus fa-3x"></i></td>
+            <td>Rigtigt svar!</td>
+            <td><i class="fas">
+                <i class="fas fa-check"></i>
+            </i></td>
+            <td><i class="fas fa-3x">
+                <i class="fas fa-check"></i>
+            </i></td>
           </tr>
         </table>
       </div>
     </main>
+
+    
 
 
   </body>
