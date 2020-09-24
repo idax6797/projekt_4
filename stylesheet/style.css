@@ -115,7 +115,6 @@ p {
 }
 
 .drag_container {
-  @media screen and (max-width: 600px)
   position: relative;
   background-color: #52918B;
   margin: 25px;
@@ -132,7 +131,6 @@ p {
 }
 
 .draggable_container {
-  @media screen and (max-width: 600px)
   position: relative;
   margin: 25px;
   width: 350px;
