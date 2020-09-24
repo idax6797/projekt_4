@@ -29,4 +29,9 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+function nextbutton() {
+    window.location.href = "../quiz/quiz.html";
+}
+
+
 //creds til w3schools <3

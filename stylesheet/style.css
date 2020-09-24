@@ -13,7 +13,7 @@ body{
 }
 
 h1{
-  margin-top: 130px;
+  margin-top: 0px;
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
@@ -35,78 +35,10 @@ p {
   text-align: left;
 }
 
-/* LOG IN */
-.container{
-    @media screen and (max-width: 600px)
-   position: relative;
-   margin-top: 100px;
-   width: 450px;
-   height: auto;
-   border-radius: 5px;
-}
-.label{
-  padding: 20px 130px;
-  font-size: 35px;
-  font-weight: bold;
-  color:#52918B;
-}
-
-.login_form{
-  padding: 20px 40px;
-}
-
-.login_form .font{
-  font-size: 18px;
-  color: white;
-  margin: 5px 0px;
-}
-
-.login_form input{
-   height: 40px;
-   width: 350px;
-   padding: 0 5px;
-   font-size:18px;
-   outline: none;
-   border: 1px solid #52918B;
-   color: white;
-   background-color: #52918B;
-}
-
-.login_form .font2{
-  margin-top: 30px;
-}
-
-.login_form button{
-  margin: 45px 0px 30px 0px;
-  height: 44px;
-  width: 135px;
-  font-size: 20px;
-  background-color: #FA9148;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  font-weight: lighter;
-  border: none;
-  border-radius: 33px;
-}
-
-.login_form #fornavn_error,
-.login_form #kode_error{
-  margin-top: 5px;
-  width: 345px;
-  font-size: 18px;
-  color: #FA9148;
-  background: #FF5E49;
-  text-align: center;
-  padding: 5px 8px;
-  border-radius: 3px;
-  border: 1px solid #FA9148;
-  display: none;
-}
-
 /* POST 4 */
 #drag{
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .drag_txt {
   padding: 10px;
@@ -215,4 +147,64 @@ li {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* credts: Mateusz Rybczonek -  https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/*/
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TIMER */
+/* Her sætter jeg min containers højde og bredde */
+.base-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+/* Her fjerner jeg cirklens fill samt stroke - så man kan komme til at se tiden */
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+/* Her bestemmer jeg tykkelsen samt farven på min nederste cirkel*/
+.base-timer__path-elapsed {
+  stroke-width: 8px;
+  stroke: #52918B;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 8px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.orange {
+  color: #FA9148;
+}
+
+/* Her styler jeg teksten så den passer i cirklen - her er størrelsen lige så stor som parent containeren - og lablet er alignet til toppen og så er indholdet centreret med en flexbox*/
+.base-timer__label {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
 }

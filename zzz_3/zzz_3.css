@@ -1,0 +1,77 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body{
+  background-color: #1F1F1E;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  padding-top: 60%;
+  font-size: 7vh;
+}
+
+h2{
+  font-size: 15vh;
+  color: #FF5E49;
+}
+
+.midt_z{
+  font-size: 17vh;
+}
+p{
+  font-size: 2vh;
+  text-align: center;
+  padding-bottom: 15%;
+}
+a{
+  font-size: 1.7vh;
+  color: #FFFFFF;
+  text-decoration: none;
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-iteration-count: 30;
+}
+
+
+@keyframes hide {
+  0% {
+       display: none;
+       opacity: 0;
+   }
+
+   50% {
+       display: block;
+       opacity: 0;
+   }
+
+   100% {
+       display: block;
+       opacity: 1;
+   }
+}
+
+@media screen and (max-width: 526px) {
+  p{
+    font-size: 0.2vw;
+    padding-bottom: 10%;
+
+  }
+  a{
+    font-size: 0.2vw;
+  }
+
+}
