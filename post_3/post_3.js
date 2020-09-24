@@ -23,7 +23,7 @@ function showSlides(n, no) {
     slides[slideIndex[no] - 1].style.display = "block";
 }
 
-function nextbutton_2() {
+function nextbutton() {
     window.location.href = "../correct_2/correct_2.html";
 }
 
