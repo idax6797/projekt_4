@@ -1,3 +1,4 @@
+/*Dette er taget fra en guide på nettet. Det er et par dage siden, så jeg kan ikke finde hjemmesiden igen, men skud ud til hvem end der har lavet det */
 
 const canvasEl = document.querySelector('#canvas');
 
