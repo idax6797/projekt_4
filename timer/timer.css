@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* credts: Mateusz Rybczonek -  https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/*/
+
 body{
   background-color: #08544A;
   display: flex;
